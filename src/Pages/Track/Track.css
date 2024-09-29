@@ -1,0 +1,31 @@
+.track-section{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.track-card{
+    align-items: center;
+    width: 30rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.track-text{
+    text-align: center;
+    
+}
+
+.icon{
+    fill: purple;
+    font-size: 5rem;
+}
+.track-list li{
+list-style: none;
+}
+
+
