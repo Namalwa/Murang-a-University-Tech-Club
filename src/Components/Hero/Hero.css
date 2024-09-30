@@ -1,27 +1,62 @@
+ 
+ .hero-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 5rem;
+ }
+
+ .image-hero-div{
+    position: relative;
+    top: 0px;
+    width:  100%;
+    height: 100%;
+}
+
  .hero-image{
+    position: absolute;
+    z-index: +1;
+    top: 0px;
+    width:  100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-darkened{
+   position: absolute;
+   z-index: +2;
+   top: 0px;
+   width: 100%;
+   height: 100%;
+   background-color: black;
+   opacity: .7;
+}
+
+
+.on-img-txt{
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover; 
-        z-index: -1;
-        filter: blur(3px);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: max-content;
+        height: 100px;
+       color: var(--background-color);
+       z-index: +3;
+       display: block;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+    }
+    @media screen and(max-width:37.5em){
+        .hero-text{
+        font-size: .5rem ;
+        }
     }
 
-    .hero-text{
-        color: white;
-        text-align: center;
-        align-items: center;
-        padding-top: 180px;
-        font-size: 5.6rem;
+.hero-text{
+        font-size: 5rem;
+        
     }
-    @media screen and(max-width:21.875em){
-        .hero-text{
-        font-size: 0.5rem;
-        padding-top: 10px;
-        }
-}
 
 .register-button {
     border-radius: 30px;
@@ -31,7 +66,7 @@
     color: var(--background-color);
     padding: 10px 20px; 
     cursor: pointer; 
-    transition: background-color 0.3s, transform 0.2s; 
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .register-button:hover {
@@ -39,10 +74,4 @@
     transform: scale(1.05); 
 }
 
-.button-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px; 
-}
 

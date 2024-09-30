@@ -1,23 +1,13 @@
- .about-us {
-    padding: 4rem 1rem;
-    background-color: #f0f4f8;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    
-}
-
-.about-us-title {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: var(--blackcolor);
-    text-transform: uppercase;
-}
 
 .about-us-description {
     font-size: 1.5rem;
-    margin-bottom: 2rem;
-    color: #555;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.about-us{
+    padding-top: 2rem;
+    margin-bottom: 5rem;
 }
 
 .about-us-container {
@@ -27,6 +17,7 @@
     gap: 1.5rem;
 }
 
+
 .about-us-card {
     background-color: #ffffff;
     border-radius: 8px;
@@ -34,6 +25,7 @@
     padding: 1.5rem;
     width: 300px;
     transition: transform 0.3s;
+    background-color: rgb(245, 239, 255);
 }
 
 .about-us-card:hover {
@@ -49,11 +41,10 @@
 .card-text,
 .card-list {
     font-size: 1.5rem;
-    color: #333;
     list-style: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48em) {
     .about-us {
         padding: 3rem 1rem;
     }
@@ -78,7 +69,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30em) {
     .about-us {
         padding: 2rem 1rem;
     }
@@ -92,8 +83,8 @@
     }
 
     .about-us-card {
-        width: 100%; /* Make the card take full width */
-        margin-bottom: 1rem; /* Add space between cards */
+        width: 100%; 
+        margin-bottom: 1rem;
         padding: 1rem;
     }
 

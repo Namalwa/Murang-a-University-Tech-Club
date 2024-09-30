@@ -8,7 +8,6 @@
   h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #333;
   }
   
   .leaders-container {
@@ -36,19 +35,16 @@
   
   .leader-name {
     font-size: 1.5rem;
-    color: #333;
     margin-bottom: 10px;
   }
   
   .leader-role {
     font-size: 1.2rem;
-    color: #555;
     margin-bottom: 10px;
   }
   
   .leader-bio {
     font-size: 1rem;
-    color: #777;
     margin-bottom: 20px;
   }
   

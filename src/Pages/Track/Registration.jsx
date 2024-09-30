@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import './Registration.css'; 
+import React, { useState } from "react";
+import "./Registration.css";
 
 const Registration = () => {
   const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    course: '',
-    year: '',
-    track: ''
+    fullName: "",
+    email: "",
+    course: "",
+    year: "",
+    track: "",
   });
 
   const tracks = [
@@ -16,20 +16,19 @@ const Registration = () => {
     "Web Development",
     "Mobile Development",
     "Cloud Engineering",
-    "Power Platform"
+    "Power Platform",
   ];
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Additional logic can be added here (e.g., sending data to a server)
+    console.log("Form submitted:", formData);
   };
 
   return (
@@ -45,7 +44,7 @@ const Registration = () => {
             value={formData.fullName}
             onChange={handleChange}
             required
-            placeholder="Enter your full name"
+            placeholder="enter full name"
           />
         </div>
         <div className="form-group">
@@ -57,7 +56,7 @@ const Registration = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            placeholder="Enter your email"
+            placeholder="enter email"
           />
         </div>
         <div className="form-group">
@@ -69,20 +68,20 @@ const Registration = () => {
             value={formData.course}
             onChange={handleChange}
             required
-            placeholder="Enter your course of study"
+            placeholder="enter course of study"
           />
         </div>
         <div className="form-group">
           <label htmlFor="year">Year of Study:</label>
           <input
-            type="number" // Changed to number for better validation
+            type="number"
             id="year"
             name="year"
             value={formData.year}
             onChange={handleChange}
             required
             placeholder="Enter your year of study"
-            min="1" // Ensure user enters a positive number
+            min="1"
           />
         </div>
         <div className="form-group">
@@ -102,7 +101,9 @@ const Registration = () => {
             ))}
           </select>
         </div>
-        <button type="submit" className="submit-button">Register</button>
+        <button type="submit" className="submit-button">
+          Register
+        </button>
       </form>
     </div>
   );
